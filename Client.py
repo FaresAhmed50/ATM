@@ -1,13 +1,18 @@
-
 class Client:
 
-    def __init__(self, firstname, lastname, phonenumber, age, initial_balance=0):
-        # Constructor to initialize the client with personal details and balance
+    def __init__(self, firstname: str, lastname: str, phonenumber: int, age: int, gender: str, initial_balance: float = 0):
+
+        # Running validation Statement
+        # assert int.__sizeof__(phonenumber) == 11, f"The Phone Number must be 11 characters long"
+        # assert age >= 19, f"The Age of the user must be greater than 18 years old"
+
+        # passing  the argument to the self object
         self.firstname = firstname
         self.lastname = lastname
         self.phonenumber = phonenumber
         self.age = age
-        self.balance = initial_balance  # Default balance is set to 0
+        self.gender = gender
+        self.balance = initial_balance
 
     def deposit(self, amount):
         # Method to deposit an amount into the client's account
