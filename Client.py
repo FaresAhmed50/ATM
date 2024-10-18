@@ -1,3 +1,7 @@
+import uuid
+from FileHelper import FileHelper
+Saved_ID = set()
+
 class Client:
 
     def __init__(self, firstname: str, lastname: str, phonenumber: int, age: int, gender: str, initial_balance: float = 0):
@@ -7,6 +11,7 @@ class Client:
         # assert age >= 19, f"The Age of the user must be greater than 18 years old"
 
         # passing  the argument to the self object
+        self.id = FileHelper.Generate_Unique_Id(self, Saved_ID)
         self.firstname = firstname
         self.lastname = lastname
         self.phonenumber = phonenumber
