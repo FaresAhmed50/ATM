@@ -1,1 +1,6 @@
-
+id,firstname,lastname,phonenumber,age,gender,password,balance
+f15d74be-d545-43,fares,Ahmed,123456789,29,M,fares,5600.0
+e7ba2a95-78dd-4a,Fares,Nour,12359756,29,F,123,5000.0
+b5f278de-84f4-48,Fares,Ahmed,123456789,5000000,M,123,1000000.0
+24ba6744-fb8e-45,Nour,Ahmed,123456789,29,F,123,5000.0
+339e35a6-73c7-48,menna,Ahmed,123968574,18,F,menna,1000.0
